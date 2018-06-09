@@ -161,7 +161,7 @@ def group_repos_reqs(conn, g_id, oauth):
 def generate_bash_script(groups, gl_group):
     f = open("setup.sh", "w")
 
-    f.write("/usr/bin/env bash\n\n")
+    f.write("#!/usr/bin/env bash\n\n")
     f.write("cd ~\n\n")
 
     for g in groups:
